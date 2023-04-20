@@ -1,0 +1,9 @@
+.hero{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
