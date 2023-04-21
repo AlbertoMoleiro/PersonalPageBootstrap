@@ -1,9 +1,26 @@
 .hero{
     display: flex;
+    width: fit-content;
     align-items: center;
-    height: 400px;
+    justify-content: center;
+    max-height: fit-content;
+
+}
+.border-radius{
     overflow: hidden;
     border-radius: 20px;
+    width: 80%;
+}
+@media (max-width: 768px) {
+    .border-radius{
+        width: 100%;
+    }
+}
+
+
+.fit-content{
+    width: fit-content;
+    padding: 10px;
 }
 
 
