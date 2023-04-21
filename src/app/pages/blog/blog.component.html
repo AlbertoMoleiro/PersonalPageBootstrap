@@ -1,1 +1,19 @@
-<p>blog works!</p>
+<div class="container">
+    <div class="d-flex flex-1 flex-wrap justify-content-center gap-3">
+        <div class="card" style="max-width: 540px;" *ngFor="let article of articles" >
+            <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center align-items-center p-3">
+                    <img [src]="article.article.image" class="img-fluid rounded-start" alt="logo">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{article.article.sections[0].title}}</h5>
+                        <p class="card-text">{{article.article.sections[0].content}}</p>
+                        <a [routerLink]="['/article',article.article.id]" class="btn btn-primary">See more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ArticlesService } from 'src/app/services/articles.service';
 
 @Component({
   selector: 'app-blog',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent {
+
+        articles: any[] = [];
+
+        constructor(private articlesService: ArticlesService) {
+            this.articles = articlesService.getArticles();
+        }
 
 }
