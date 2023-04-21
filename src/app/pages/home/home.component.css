@@ -4,13 +4,12 @@
     align-items: center;
     justify-content: center;
     max-height: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 500px;
 
 }
-.border-radius{
-    overflow: hidden;
-    border-radius: 20px;
-    width: 80%;
-}
+
 @media (max-width: 768px) {
     .border-radius{
         width: 100%;
