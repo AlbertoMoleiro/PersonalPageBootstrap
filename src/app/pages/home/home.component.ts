@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+    showSoftSkills:boolean = false;
+
+    toggleSkills(flag:boolean){
+        this.showSoftSkills = flag;
+    }
 }

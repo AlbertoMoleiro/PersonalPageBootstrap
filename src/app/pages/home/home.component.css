@@ -1,20 +1,18 @@
 .hero{
     display: flex;
-    width: fit-content;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    max-height: fit-content;
     overflow: hidden;
     border-radius: 10px;
-    max-height: 500px;
+
+    max-height: 450px;
 
 }
-
-@media (max-width: 768px) {
-    .border-radius{
-        width: 100%;
-    }
+.bg-grey{
+    background-color: #dfe3e6;
 }
+
 
 
 .fit-content{
